@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+    background-image: linear-gradient(
+    45deg,
+    hsl(46deg 89% 40%) 0%,
+    hsl(45deg 88% 43%) 9%,
+    hsl(44deg 87% 46%) 18%,
+    hsl(43deg 86% 49%) 27%,
+    hsl(43deg 88% 50%) 36%,
+    hsl(45deg 89% 50%) 45%,
+    hsl(47deg 91% 49%) 55%,
+    hsl(48deg 95% 49%) 64%,
+    hsl(50deg 97% 49%) 73%,
+    );
+    
+}
+
+a {
+    text-decoration: none;
+    color: $font-color-principal;
+    
+}
+
+img {
+    width: 100%;
+}

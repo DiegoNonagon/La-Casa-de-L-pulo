@@ -1,0 +1,246 @@
+//Navbar
+
+.cont-menu {
+    @include flex(null, center, center,0);
+    background-color: $color-terciario; 
+    border-bottom: solid .3rem $color-principal; 
+}
+
+.menu-style {
+    @include flex(null, center, center,0);
+}
+
+div.navbar-nav {
+    border-left: 2px solid black;
+}
+
+.menu-img {
+    width: 8%;
+    margin-left: 25rem;
+}
+
+.menu-items {
+    @include flex(null, center, center, 0rem);
+    padding: .5rem;
+    flex-wrap: wrap;
+}
+
+.style-item {
+    color: rgb(119, 119, 119);
+    font-size: $font-m;
+    font-weight: bold;
+    font-family: pacifico, cursive;
+    transition: all 0.5s ease;
+    margin: 1rem;
+    border-bottom: 2px solid white;
+}
+
+.style-item:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+//Main
+
+.cont {
+    @include flex (column,center,center,0);
+}
+
+.cont-cartel {
+    margin: 15rem 2rem 2rem 2rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.titulo {
+    color: black;
+    font-family: pacifico, cursive;
+    font-size: $font-xxl;
+    font-weight: bold;
+    margin: 3rem 35rem 5rem 5rem;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+}
+
+.cont-main {
+    max-width: 960px;
+    @include flex-center;
+    margin: 3rem auto;
+    gap: 2rem;
+}
+
+.main-parrafo {
+    font-size: $font-l;
+    font-family: "Ubuntu", sans-serif;
+    margin: 2%;
+}
+.carousel {
+    max-width: 475px;
+    box-shadow: var(--shadow-elevation-high);
+    border: solid 2px black;
+    border-radius: 10px;
+
+}
+
+.main-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+//seccion cervezas
+
+.titulo-alt {
+    font-size: $font-xl;
+    font-family: pacifico, cursiva;
+    text-align: center;
+    margin: 3rem;
+    border-bottom: solid 2px black;
+}
+
+.titulo-alt2 {
+    font-size: $font-xl;
+    font-family: pacifico, cursiva;
+    text-align: center;
+    margin: 3rem;
+}
+
+.cont-cervezas {
+    @include flex(null,center,null,0);
+    flex-wrap: wrap;
+    margin: 3rem 10rem;
+}
+
+.card {
+    @include flex-center;
+    max-width: 23rem;
+    min-height: 40rem;
+    margin: 1rem;
+    border: solid 2px black;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.card-title {
+    font-family: pacifico, cursive;
+    font-size: $font-m;
+}
+
+.card-text {
+    border-top: solid 1px black;
+    margin-top: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: $font-s;
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+//seccion instagram
+
+.cont-insta {
+    @include flex (null, center, null, 0);
+    margin: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+//Seccion galeria
+
+.galeria-img {
+    border-radius: 8px;
+}
+
+//seccion ubicacion
+
+.cont-ubicacion {
+    @include flex (column, center, center, 0);
+    margin: 3rem;
+    gap: 2rem;
+}
+
+iframe {
+    margin: 2rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.ubicacion {
+    font-family: pacifico,cursive;
+    font-size: $font-l;
+    text-align: center;
+
+}
+
+//Footer
+
+.cont-footer {
+    @include flex (null, center, center, 0);
+    background-color: $color-principal;
+    width: 100%;
+    height: 15rem;
+    margin-top: 6rem;
+}
+
+.cont-footer-items {
+    @include flex (null, center, center, 7rem);
+    margin: 1.5rem;
+    gap: 25%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &-redes {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.footer-items-parrafo {
+    font-family: "Ubuntu", sans-serif;
+        font-size: $font-s;
+        color: white;
+}
+
+.redes-logo {
+    width: 5rem;
+    margin: 1rem;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+}
+.redes-logo:hover {
+    width: 6rem;
+    margin: 0.5rem;
+}
+
+// media queries
+
+@media screen and (max-width:890px) {
+    .cont-main {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .titulo {
+        margin: 5px 5px 5px 5px;
+    }
+
+    .menu-img {
+        width: 20%;
+        margin: auto;
+    }
+
+    .cont-cervezas {
+        margin: auto;
+    }
+
+    iframe {
+        margin: auto;
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .menu-img {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+
