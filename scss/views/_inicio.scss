@@ -15,8 +15,8 @@ div.navbar-nav {
 }
 
 .menu-img {
-    width: 8%;
-    margin-left: 25rem;
+    width: 20%;
+    margin-left: 35rem;
 }
 
 .menu-items {
@@ -47,8 +47,9 @@ div.navbar-nav {
 }
 
 .cont-cartel {
-    margin: 15rem 2rem 2rem 2rem;
+    margin: 14rem 2rem 2rem 2rem;
     box-shadow: var(--shadow-elevation-high);
+    max-width: 950px;
 }
 
 .titulo {
@@ -65,6 +66,11 @@ div.navbar-nav {
     @include flex-center;
     margin: 3rem auto;
     gap: 2rem;
+}
+
+.cont-parrafo {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-parrafo {
@@ -131,6 +137,32 @@ div.navbar-nav {
 
 .card-img-top {
     max-width: 100%;
+}
+
+.boton-mas {
+    border: black solid 2px;
+    border-radius: 12px;
+    margin: 5rem 2rem;
+    box-shadow: var(--shadow-elevation-high);
+    background-color: white;
+    transition: all 0.8s ease;
+}
+
+.cont-boton {
+    @include flex-center;
+}
+
+.boton-mas:hover {
+    background-color: rgb(206, 204, 204);
+
+}
+
+.boton-text {
+    font-size: $font-xl;
+    font-family: pacifico, cursiva;
+    text-align: center;
+    margin: 1rem;
+    height: 5rem;
 }
 
 //seccion instagram
@@ -221,7 +253,7 @@ iframe {
     }
 
     .menu-img {
-        width: 20%;
+        width: 40%;
         margin: auto;
     }
 
@@ -233,13 +265,16 @@ iframe {
         margin: auto;
         max-width: 300px;
     }
-
 }
 
 @media screen and (max-width:500px) {
     .menu-img {
-        width: 30%;
+        width: 45%;
         margin: auto;
+    }
+
+    .cont-cartel {
+        margin: 10rem 2rem 2rem 2rem; 
     }
 }
 

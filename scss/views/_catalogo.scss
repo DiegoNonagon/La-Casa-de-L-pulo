@@ -3,7 +3,7 @@
         font-family: pacifico, cursive;
         font-size: $font-xxl;
         font-weight: bold;
-        margin: 20rem 2rem 5rem 25rem;
+        margin: 15rem 2rem 5rem 25rem;
         text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
    
 }
@@ -29,7 +29,13 @@
 
 @media screen and (max-width:890px) {
     .titulo-2 {
-        margin: 16rem 5rem 5rem 5rem;
+        margin: 15rem 5rem 5rem 5rem;
+}
+}
+
+@media screen and (max-width:500px) {
+    .titulo-2 {
+        margin: 12rem 5rem 5rem 5rem;
 }
 }
 
