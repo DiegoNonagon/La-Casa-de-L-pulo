@@ -91,7 +91,7 @@ img {
   width: 100%;
 }
 
-.cont-menu {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,20 +100,22 @@ img {
   border-bottom: solid 0.3rem #000;
 }
 
-.menu-style {
+div.navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0;
-}
-
-div.navbar-nav {
   border-left: 2px solid black;
 }
 
 .menu-img {
-  width: 20%;
+  width: 8%;
   margin-left: 35rem;
+}
+
+.menu-img-dos {
+  width: 15%;
+  margin-left: 15rem;
+  margin-right: 10rem;
 }
 
 .menu-items {
@@ -355,12 +357,22 @@ iframe {
     flex-direction: column;
     gap: 5rem;
   }
+  div.navbar-nav {
+    border-left: 2px solid white;
+  }
   .titulo {
     margin: 5px 5px 5px 5px;
   }
   .menu-img {
-    width: 40%;
-    margin: auto;
+    width: 12%;
+    margin-left: 0rem;
+  }
+  .menu-img-dos {
+    width: 18%;
+    margin-right: 20rem;
+  }
+  .navbar {
+    justify-content: space-around;
   }
   .cont-cervezas {
     margin: auto;
@@ -371,12 +383,23 @@ iframe {
   }
 }
 @media screen and (max-width: 500px) {
+  div.navbar-nav {
+    border-left: 2px solid white;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
   .menu-img {
-    width: 45%;
-    margin: auto;
+    width: 25%;
+    margin-left: 0rem;
+  }
+  .menu-img-dos {
+    width: 40%;
+    margin-left: 0rem;
+    margin-right: 4rem;
   }
   .cont-cartel {
-    margin: 10rem 2rem 2rem 2rem;
+    margin: 12rem 2rem 2rem 2rem;
   }
 }
 .titulo-2 {

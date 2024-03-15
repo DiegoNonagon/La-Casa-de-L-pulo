@@ -1,22 +1,25 @@
 //Navbar
 
-.cont-menu {
+.navbar {
     @include flex(null, center, center,0);
     background-color: $color-terciario; 
     border-bottom: solid .3rem $color-principal; 
 }
 
-.menu-style {
-    @include flex(null, center, center,0);
-}
-
 div.navbar-nav {
+    @include flex-center;
     border-left: 2px solid black;
 }
 
 .menu-img {
-    width: 20%;
+    width: 8%;
     margin-left: 35rem;
+}
+
+.menu-img-dos {
+    width: 15%;
+    margin-left: 15rem;
+    margin-right: 10rem;
 }
 
 .menu-items {
@@ -248,13 +251,26 @@ iframe {
         gap: 5rem;
     }
 
+    div.navbar-nav {
+        border-left: 2px solid white;
+    }
+
     .titulo {
         margin: 5px 5px 5px 5px;
     }
 
     .menu-img {
-        width: 40%;
-        margin: auto;
+        width: 12%;
+        margin-left: 0rem;
+    }
+
+    .menu-img-dos {
+        width: 18%;
+        margin-right: 20rem;
+    }
+
+    .navbar {
+        justify-content: space-around;
     }
 
     .cont-cervezas {
@@ -268,14 +284,40 @@ iframe {
 }
 
 @media screen and (max-width:500px) {
+
+    div.navbar-nav {
+        border-left: 2px solid white;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
     .menu-img {
-        width: 45%;
-        margin: auto;
+        width: 25%;
+        margin-left: 0rem;
+    }
+
+    .menu-img-dos {
+        width: 40%;
+        margin-left: 0rem;
+        margin-right: 4rem ;
     }
 
     .cont-cartel {
-        margin: 10rem 2rem 2rem 2rem; 
+        margin: 12rem 2rem 2rem 2rem; 
     }
+
+    //.card {
+      //  @include flex-center;
+      //  max-width: 13rem;
+      //  min-height: 20rem;
+   // }
+
+    //.card-text {
+      //  font-size: smaller;
+   // }
+    
 }
 
 
